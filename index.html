@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online shopping amazon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <style>
         *{box-sizing: border-box;margin:0% ;padding: 0;}
         body{background-color: #eaeded;}
@@ -19,9 +20,9 @@
          .add{display: flex;justify-content: space-between;align-items: center; color: #fff;}
          .link{display: flex;justify-content: center; align-items: center;color: #fff;}
          a{color: #fff;}
-         .grid-container1{display: grid;grid-template-columns: auto auto auto auto;grid-gap: 50px;background-color:transparent; height: auto ;margin: 1vh;padding: 15px;margin-bottom: 7vh;margin-top: -50vh; }
+         .grid-container1{display: grid;grid-template-columns: auto auto auto auto;grid-gap: 50px;background-color:transparent; height: auto ;margin: 1vh;padding: 15px;margin-bottom: 7vh;margin-top: -0vh; }
          .grid-container2{display: grid;grid-template-columns: auto auto auto auto;grid-gap: 50px;background-color: transparent; height: auto ;margin: 1vh;padding: 5px;margin-bottom: 7vh;margin-top: 20vh; }
-         .grid-item{display:grid;border:#000 2px solid;grid-template-columns: auto auto; height:60vh ;grid-gap: 2px;background-color: #fff;align-items: center;}
+         .grid-item{display:grid;grid-template-columns: auto auto; height:60vh ;grid-gap: 2px;background-color: #fff;align-items: center;}
          .grid-img{background-color: #fff ;height: auto;}
          .grid-img img{height: 100%;width: 100%;}
          .footer1{display: flex; justify-content:center ;align-items: center;background-color: #37475a;z-index: 1000;padding: 15px;}
@@ -34,12 +35,12 @@
          .country{display: block;height:30vh ;width: 100%;background-color: #232f3e;;}
          .c1{display: flex; justify-content:space-around; align-items: center;background-color: #232f3e;}
          .cname{display: flex; justify-content:space-around; align-items: center;background-color: #232f3e;}
-         .bgimg{background-image: url('bg1.jpg');width: 100%;height: 90vh;}
          .footer1 a:hover,.footer2 a:hover,.cname a:hover{border-bottom: #fff 1px solid;}    
          h5{color: #0f1111;text-align: center;}
          h2{color: #000;}
          .grid-item a{ color:#0066c0}
          .final-footer{text-align: center;background-color: #131a22; color: #fff;padding: 20px;}
+         .heet{border: #000 solid 3px;background-color: #fff; border-radius: 3%;}
 
    </style>
 </head>
@@ -95,79 +96,118 @@
         <a href="#"><img src="primeimg.jpg" width="300px" height="70px"></a>&nbsp;
         <a href="#"><img src="prime.png" width="150px" height="70px"></a>
     </span> </div>
-   <div class="bgimg"></div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="bg1.jpg" class="d-block w-100 h-50" alt="..." >
+          </div>
+          <div class="carousel-item">
+            <img src="bg2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="bg3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
    
     <div class="grid-container1">
-       
+        <div class="heet">
+            <h5>for your home</h5>
         <div class="grid-item">
-            <div class="grid-img"><a href="#"><h5>FOR YOUR HOME </h5><img src="wash1.jpg"></a><h5>Washing Machine</h5> </div>
-            <div class="grid-img"><a href="#"><h5> <a href="#">See More</a></h5><img src="wash2.jpg"></a><h5>Dish Washer</h5> </div>
+            <div class="grid-img"><a href="#"><img src="wash1.jpg"></a><h5>Washing Machine</h5> </div>
+            <div class="grid-img"><a href="#"><img src="wash2.jpg"></a><h5>Dish Washer</h5> </div>
             <div class="grid-img"><a href="#"><img src="wash3.jpg"></a><h5>television</h5> </div>
             <div class="grid-img"><a href="#"><img src="wash4.jpg"></a> <h5>refrigerator</h5></div>
-          
-      
 
         </div>
-
-   
+    </div>
+    <div class="heet">
+        <h5>Fashion wear || under 400</h5>
         <div class="grid-item">
-            <div class="grid-img"><a href="#"><h5>Fashion Wear | under 400</h5><img src="wash5.jpg"></a><h5>Men's Fashion</h5></div>
-            <div class="grid-img"><a href="#"><h5><a href="#">see more</h5></a><img src="wash6.jpg"><h5>Women's Fashion</h5></a></div>
+            <div class="grid-img"><a href="#"><img src="wash5.jpg"></a><h5>Men's Fashion</h5></div>
+            <div class="grid-img"><a href="#"><h5><img src="wash6.jpg"><h5>Women's Fashion</h5></a></div>
             <div class="grid-img"><a href="#"><img src="wash7.jpg"></a><h5>Electronic</h5></div>
             <div class="grid-img"><a href="#"><img src="wash8.jpg"></a><h5>Home decor</h5></div>
 
         </div>
+    </div>
 
-   
+        <div class="heet">
+            <h5>Stay Entertained While Working</h5>
         <div class="grid-item">
-            <div class="grid-img"><a href="#"><h5>Stay Entertained While Working</h5><img src="wash9.jpg"></a><h5>Tablets</h5></div>
-            <div class="grid-img"><a href="#"><h5><a href="#">See More</a></h5><img src="wash10.jpg"></a><h5>Speaker And Headphones</h5></div>
+            <div class="grid-img"><a href="#"><img src="wash9.jpg"></a><h5>Tablets</h5></div>
+            <div class="grid-img"><a href="#">><img src="wash10.jpg"></a><h5>Speaker And Headphones</h5></div>
             <div class="grid-img"><a href="#"><img src="wash11.jpg"></a><h5>musical instruments</h5></div>
             <div class="grid-img"><a href="#"><img src="wash12.jpg"></a><h5>Gaming monitor</h5></div>
         </div>
+    </div>
 
        
 
-        
+        <div class="heet">
+            <h5>Shop by category</h5>
         <div class="grid-item">
-            <div class="grid-img"><a href="#"><h5>Shop by category</h5><img src="wash13.jpg"></a><h5>Fresh</h5></div>
-            <div class="grid-img"><a href="#"><h5><a>See More</a></h5><img src="wash14.jpg"></a><h5>Mobiles</h5></div>
+            <div class="grid-img"><img src="wash13.jpg"></a><h5>Fresh</h5></div>
+            <div class="grid-img"><img src="wash14.jpg"></a><h5>Mobiles</h5></div>
             <div class="grid-img"><a href="#"><img src="wash15.jpg"></a><h5>Fashion</h5></div>
             <div class="grid-img"><a href="#"><img src="wash17.jpg"></a><h5>electronics</h5></div>
         </div> 
-    
+    </div>
    </div>
 </div>
+
    
    <div class="grid-container2">
+    <div class="heet">
+        <h5>HOME ITEM</h5>
     <div class="grid-item">
-        <div class="grid-img"><a href="#"><h5>HOME ITEM</h5><img src="wash7.jpg"></a><h5>Accessories</h5> </div>
-        <div class="grid-img"><a href="#"><h5><a href="#">See More</a></h5><img src="wash8.jpg"></a><h5>Home Decoration</h5> </div>
+        <div class="grid-img"><a href="#"><img src="wash7.jpg"></a><h5>Accessories</h5> </div>
+        <div class="grid-img"><a href="#"><img src="wash8.jpg"></a><h5>Home Decoration</h5> </div>
         <div class="grid-img"><a href="#"><img src="wash19.jpg"></a><h5>Home appliance</h5> </div>
         <div class="grid-img"><a href="#"><img src="wash20.jpg"></a><h5>Bed</h5> </div>
       
-
     </div>
-
+    </div>
+    <div class="heet">
+        <h5>Most Search Items</h5>
     <div class="grid-item">
         <div class="grid-img"><a href="#"><img src="wash20.jpg"></a></div>
-        <div class="grid-img"><a href="#"><h2>Most Search Items</h2><img src="wash22.jpg"></a></div>
+        <div class="grid-img"><a href="#"></a><img src="wash22.jpg"></a></div>
         <div class="grid-img"><a href="#"><img src="wash19.jpg"></a></div>
         <div class="grid-img"><a href="#"><img src="wash20.jpg"></a></div>
-
     </div>
+    </div>
+    <div class="heet">
+        <h5>Electronics Gadget</h5>
     <div class="grid-item">
         <div class="grid-img"><a href="#"><img src="wash21.jpg"></a></div>
         <div class="grid-img"><a href="#"><img src="wash22.jpg"></a></div>
         <div class="grid-img"><a href="#"><img src="wash28.jpg"></a></div>
         <div class="grid-img"><a href="#"><img src="wash28.jpg"></a></div>
     </div>
+</div>
+    <div class="heet">
+        <h5>Laptop</h5>
     <div class="grid-item">
-        <div class="grid-img"><a href="#"><h5>Laptops</h5><img src="wash23.jpg"></a><h5>Dell</h5></div>
-        <div class="grid-img"><a href="#"><h5><a href="#">see more</a></h5><img src="wash24.webp"></a><h5>LENOVO</h5></div>
+        <div class="grid-img"><img src="wash23.jpg"></a><h5>Dell</h5></div>
+        <div class="grid-img"><img src="wash24.webp"></a><h5>LENOVO</h5></div>
         <div class="grid-img"><a href="#"><img src="wash25.webp"></a><h5>ASSUS</h5></div>
         <div class="grid-img"><a href="#"><img src="wash27.webp"></a><h5>HP</h5></div>
     </div> 
+    </div>
     </div>
     <div class="footer1">
            <a href="#"><h5> Back To Top</h5></a>
@@ -230,7 +270,9 @@
                 &copy; ALL RIGHT RESERVED || DESIGENED BY HEET PATEL
         </div>
 
-    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
 
 
     
